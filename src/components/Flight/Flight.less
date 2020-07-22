@@ -1,0 +1,147 @@
+.ul_table {
+  ul {
+    width: 20%;
+    display: flex;
+    height: 0.4rem;
+    align-items: center;
+  }
+
+  li {
+    cursor: pointer;
+    line-height: 0.22rem;
+    flex: 1 0 1rem;
+    text-align: center;
+    padding-bottom: 0.08rem;
+    border-bottom: 2px solid white;
+  }
+}
+
+.active_li {
+  transition: all 0.3s linear;
+  border-bottom: 2px solid #2c8cf0 !important;
+  color: #2c8cf0;
+}
+
+.show_info {
+  margin-top: 0.1rem;
+  height: 5.6rem;
+  display: grid;
+  grid-column-gap: 0.3rem;
+  grid-row-gap: 0.44rem;
+  // grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+  // grid-template-rows: 1.5rem;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+.show_children {
+  position: relative;
+  padding: 0.1rem 0.1rem 0.22rem 0.1rem;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+  border-radius: 0.1rem;
+  width: 3.4rem;
+  height: 1.5rem;
+
+  .ivu-btn {
+    padding: 2px 12px 3px;
+
+    /deep/ span {
+      display: block;
+      transform: scale(0.9);
+    }
+  }
+}
+
+.content {
+  margin-top: 0.1rem;
+}
+
+.gary_font {
+  line-height: 20px;
+}
+
+.btn {
+  position: absolute;
+  right: 2px;
+  bottom: 15px;
+  font-size: 0.12rem;
+}
+
+.delet {
+  cursor: pointer;
+  // background: url("../../../static/publicimg/flight_delete.png") no-repeat;
+  float: right;
+  // background-position: 0.06rem, 0.04rem;
+  padding-top: 4px;
+  font-size: 0.14rem;
+  text-align: center;
+  width: 0.4rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.16);
+  opacity: 1;
+  border-radius: 1000px;
+}
+
+
+// .ivu-table-wrapper {
+//   border: 0px;
+//   height: 62vh;
+// }
+
+// .ivu-table-wrapper /deep/.ivu-table th {
+//   background-color: #ffffff;
+//   border: none;
+//   text-align: center;
+// }
+
+// .ivu-table-wrapper /deep/ .ivu-table-row {
+//   height: 0.8rem;
+//   background: rgba(254, 254, 255, 1);
+//   box-shadow: 0px 0px 4px rgba(1, 0, 55, 0.1);
+//   opacity: 1;
+// }
+
+// .ivu-table-wrapper /deep/ .ivu-table td {
+//   border: none;
+//   text-align: center;
+// }
+
+// .ivu-table-wrapper /deep/.ivu-table .line_height_row {
+//   margin-bottom: 0.17rem;
+// }
+
+
+
+.Modal /deep/.ivu-modal-content /deep/.ivu-modal-footer {
+  background: rgba(243, 245, 247, 1);
+  opacity: 1;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.form {
+  margin-top: 0.3rem;
+}
+
+.input_card {
+  // display: flex;
+  // flex-direction: column;
+  // min-width: 0;
+  // word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 6px;
+  width: 4rem;
+  border-width: 0;
+  box-shadow: 0 2px 6px 0 rgba(114, 124, 245, 0.5);
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.3rem;
+  padding: 10px;
+}
+
+.video_Modal .ivu-modal-body {
+  padding: 0;
+}
